@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Iansui&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home" class="home">
+        <div class="nav">
+            <div class="logo text-2xl">Sagar</div>
+            <div class="bar" onclick="come()"><i class="fa-solid fa-bars-staggered text-2xl"></i></div>
+        </div>
+        <div class="sidebar text-2xl" onclick="go()">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="fields">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="robo-con">
+            <div class="proff"><h1>MERN</h1><h2>Developer</h2></div>
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+            <spline-viewer class="robo" loading-anim-type="none" url="https://prod.spline.design/6w7fjVIuWDJPbLjx/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+   
+    <div id="about" class="about">
+        <div class="glass">
+            <div class="photo">
+                <img src="../photos/s2.jpg" alt="">
+            </div>
+            <div class="info-con">
+                <div class="info">
+                    <div class="category">
+                        <h1 onclick="about('experience')">Hackathons</h1>
+                        <h1 onclick="about('education')">Education</h1>
+                        <h1 onclick="about('interests')">Interests</h1>
+                    </div>
+                    <hr class="line">
+                    <div class="category-info">
+                        <div class="experience">
+                            <ul>
+                                <li style="list-style-type: circle;">
+                                    Developed a web application to promote Indian Art, Culture, Traditions, and Tourism (ACTT) by integrating
+                                    frontend with backend.
+                                </li>
+                                <li style="list-style-type: circle;">
+                                    Built a spam detection system using YouTube API and ML models 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education">
+                            <ul>
+                                <li><b>Velagapudi Ramakrishna Siddhartha Engineering College</b>
+                                    <ul>
+                                        <li>Computer Science and Engineering</li>
+                                        <li>Expected year 2026</li>
+                                        <li>CGPA : 8.16</li>
+                                    </ul>
+                                </li><hr class="line" style="margin-bottom: 3px;">
+                                <li><b>Tirumala Junior College</b>
+                                    <ul>
+                                        <li>Maths Physics Chemistry</li>
+                                        <li>2020 - 2022</li>
+                                        <li>Percentage : 97.3%</li>
+                                    </ul>
+                                </li><hr class="line" style="margin-bottom: 3px;">
+                                <li><b>Sri Chaitanya Techno School</b>
+                                    <ul>
+                                        <li>SSC</li>
+                                        <li>2019 - 2020</li>
+                                        <li>Percentage : 100%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="interests">Passionate about playing badminton, carroms, 
+                            and cricket, enhancing teamwork, strategy, and coordination skills.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skills">
+        <div class="skill-heading-con">
+            <h1>SKills</h1>
+            <!-- <p>I
+                specialize in a range of technologies across the mern stack, focused on building modern, 
+                 and user-friendly web applications.
+            </p> -->
+        </div>
+
+        <div class="skill-con">
+            <div class="frontend">
+                <h1>Frontend Development</h1>
+                <div class="fd-con">
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""></div> 
+                            <h3>HTML</h3>
+                            <p>Semantic markup, accessibility best practices, and modern HTML5 features for robust web applications.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""></div>
+                            <h3>CSS</h3>
+                            <p>Modern CSS techniques including Flexbox, Grid, animations, and responsive design for stunning interfaces.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""></div> 
+                            <h3>Javascript</h3>
+                            <p>ES6+ features, async programming, DOM manipulation, and modern patterns for scalable applications.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" alt=""></div>
+                            <h3>GSAP</h3>
+                            <p>High-performance animation library for creating smooth, complex animations and interactive experiences.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt=""></div> 
+                            <h3>React.js</h3>
+                            <p>Building interactive UIs with React and its ecosystem including hooks, context, and state management libraries.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt=""></div> 
+                            <h3>Next.js</h3>
+                            <p>Server-side rendering, static site generation, and API routes for full-stack React applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backend">
+                <h1>Backend Development</h1>
+                <div class="bd-con">
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt=""></div> 
+                            <h3>Node.js</h3>    
+                            <p>Building scalable APIs with Express.js, handling authentication, and database integrations.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt=""></div> 
+                            <h3>Express.js</h3>
+                            <p>Lightweight Node.js framework used to build APIs</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""></div> 
+                            <h3>MySQL</h3>
+                            <p>Database management, optimization, stored procedures, and integration with backend applications.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt=""></div> 
+                            <h3>MongoDB</h3>
+                            <p>NoSQL database management, schema design, and data modeling for flexible applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programming">
+                <h1>Programming Languages</h1>
+                <div class="pl-con">
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt=""></div> 
+                            <h3>C</h3>
+                            <p>Fundamental programming concepts, data structures, and algorithms for efficient software development.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt=""></div> 
+                            <h3>C++</h3>
+                            <p>Object-oriented programming, memory management, and performance optimization for system-level applications.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""></div> 
+                            <h3>Python</h3>
+                            <p>Data analysis, machine learning, and web development with frameworks like Flask and Django.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></div> 
+                            <h3>Java</h3>
+                            <p>Object-oriented programming, multithreading, and building cross-platform applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools">
+                <h1>Tools &  Technologies</h1>
+                <div class="tt-con">
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt=""></div> 
+                            <h3>Git/GitHub</h3>
+                            <p>Version control, branching strategies, pull requests, and collaborative workflows for team-based development.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt=""></div> 
+                            <h3>Docker</h3>
+                            <p>Containerization of applications, multi-container orchestration with Docker Compose.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt=""></div> 
+                            <h3>Vscode</h3>
+                            <p>A fast, lightweight, and extensible code editor optimized for building and debugging modern web and cloud applications.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-con">
+                            <div class="icon-con"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt=""></div> 
+                            <h3>Postman</h3>
+                            <p>A collaboration platform for API development that allows testing, documenting, and monitoring RESTful APIs with ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="projects" class="projects">
+        <div class="project-heading-con">
+            <h1>Projects</h1>
+            <!-- <p>I
+                Developed full-stack web applications with a focus on clean UI,
+                 efficient backend logic, and scalable, real-world solutions.
+            </p> -->
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner" style="background-image: url(../photos/Screenshot\ 2025-06-04\ 134850.png);background-position: left;background-size: cover;background-repeat: no-repeat">
+                    <div class="card-front" >
+                        <p>ACTT</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Developed a web application to promote Indian Art, Culture, Traditions, and Tourism (ACTT) by integrating
+frontend with backend
+                        </p>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="card-inner" style="background-image: url(../photos/email-spam.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;">
+                    <div class="card-front" >
+                        <p>Email Spam Detection</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Built a email spam detection system using YouTube API and ML models
+                        </p>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="card-inner" style="background-image: url(../photos/parkinsons.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;">
+                    <div class="card-front" >
+                        <p>Parkinson's Disease Prediction</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Built a parkinson's disease detection system using datasets and ML models
+                        </p>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt=""></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt=""></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7740.555729621074!2d83.08285990479365!3d17.87595333084647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3963a72cd2b109%3A0x99bb1196532ec428!2sKK%20AGRAHARAM%20RAMALAYAM!5e0!3m2!1sen!2sin!4v1748687786190!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <form class="form" action="https://api.web3forms.com/submit" method="post">
+            <div class="title">Let's meet <i class="fa-solid fa-handshake"></i><br></div>
+            <input type="hidden" name="access_key" value="22b1882b-8d09-4f5d-a7ae-00372cf09c93">
+            <input type="text" name="name" placeholder="Name" required class="input" id="ip1">
+            <input type="email" name="email" placeholder="Email" required class="input" id="ip2">
+            <textarea placeholder="Ask me something" name="message" required class="input area" id="ip3"></textarea>
+            <button type="submit" class="button-confirm" id="but">Let`s go →</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <div class="media">
+                <h2>Connect with me</h2>
+                <div>
+                    <a href="https://github.com/sagarkundrapu"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/sagar_2267/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sagar-kundrapu-17557825a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="nav-copy">
+                <h2>Navigation</h2>
+                <a href="#"><h3>Home</h3></a>
+                <a href="#about"><h3>About</h3> </a>
+                <a href="#projects"><h3>Projects</h3></a>
+                <a href="#skills"><h3>Skills</h3></a>
+                <a href="#contact"><h3>Contact</h3></a>
+            </div>
+            <div class="contact-copy">
+                <h2>Contact</h2>
+                <h3><i class="fa-solid fa-envelope"></i>&nbsp&nbsp sagarkundrapu234@gmail.com</h3>
+                <h3><i class="fa-solid fa-phone"></i>&nbsp&nbsp +91 7386445565</h3>
+                <h3><i class="fa-solid fa-location-dot"></i>&nbsp&nbsp K.K.Agraharam ,K.Kotapadu ,Anakapalle <br> ,AndhraPreadesh ,India</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© 2025 Sagar Kundrapu. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" 
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../scripts/portfolio.js"></script>
+</body>
+</html>
