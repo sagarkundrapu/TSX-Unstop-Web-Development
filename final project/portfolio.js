@@ -108,6 +108,7 @@ function contactAnimation(e,s){
             start:`top ${s}%`,
             end:`top ${e}%`,
             scrub:true,
+            markers:true
         }
     })
     t.from(".form",{
